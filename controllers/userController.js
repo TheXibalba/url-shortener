@@ -18,7 +18,7 @@ const userController = {
         password: hashedPassword,
       });
       console.log(newUser);
-      res.redirect("/user/login");
+      res.redirect("/");
     } catch (error) {
       console.log(error);
       if (error.code == 11000) {
