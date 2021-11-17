@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
+var cookieParser = require("cookie-parser");
 const indexRouter = require("./routes/indexRouter");
 const bitlyRouter = require("./routes/bitlyRouter");
 const userRouter = require("./routes/userRouter");
@@ -11,6 +12,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("tiny"));
+app.use(cookieParser());
 
 mongoose.connect("mongodb://localhost/url_shortner", {
   useNewUrlParser: true,

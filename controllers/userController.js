@@ -1,20 +1,31 @@
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
+const jwt = require("jsonwebtoken");
+
 const userController = {
   registerUser: async (req, res) => {
-    const { username, password } = req.body;
+    const { fName, username, password, lName } = req.body;
     const saltRounds = 10;
 
     try {
       const hashedPassword = await bcrypt.hash(password, saltRounds);
+      console.log(req.body);
+
       const newUser = await User.create({
+        firstName: fName,
+        lastName: lName,
         username: username,
         password: hashedPassword,
       });
-      res.send(newUser);
+      console.log(newUser);
+      res.redirect("/user/login");
     } catch (error) {
       console.log(error);
-      res.status(500).send("Internal Server error Occured");
+      if (error.code == 11000) {
+        res.status(409).send("User already exists!");
+        return;
+      }
+      res.status(500).send("Internal Server Error");
     }
   },
 
@@ -26,7 +37,17 @@ const userController = {
         const cmp = await bcrypt.compare(req.body.password, user.password);
         if (cmp) {
           //   ..... further code to maintain authentication like jwt or sessions
-          res.send(user);
+          const { username } = user;
+
+          const token = await jwt.sign({ username }, process.env.TOKEN_SECRET, {
+            expiresIn: "20m",
+          });
+          res
+            .cookie("authToken", token, {
+              expires: new Date(Date.now() + 20 * 60 * 1000),
+              httpOnly: true,
+            })
+            .redirect("/user/dashboard");
         } else {
           res.send("Wrong username or password.");
         }
@@ -37,6 +58,10 @@ const userController = {
       console.log(error);
       res.status(500).send("Internal Server error Occured");
     }
+  },
+
+  userDashboard: async (req, res) => {
+    res.render("dashboard");
   },
 };
 
