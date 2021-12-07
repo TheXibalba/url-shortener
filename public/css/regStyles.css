@@ -1,6 +1,7 @@
 .register {
   background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-  margin-top: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   padding: 3%;
 }
 .register-left {
@@ -29,6 +30,13 @@
   margin-top: 15%;
   margin-bottom: 5%;
   width: 25%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+#rocket {
+  margin-top: 15%;
+  margin-bottom: 5%;
+
   -webkit-animation: mover 2s infinite alternate;
   animation: mover 1s infinite alternate;
 }

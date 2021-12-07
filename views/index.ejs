@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Signup</title>
+    <title>Rocket | URL Shortener</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -21,148 +21,441 @@
       crossorigin="anonymous"
     ></script>
 
+    
+    <link
+    href="bootstrap-icons/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link
+    href="glightbox/css/glightbox.min.css"
+    rel="stylesheet"
+  />
+
+  <link href="css/homeStyles.css" rel="stylesheet" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <link rel="stylesheet" href="css/regStyles.css" />
+
   </head>
   <body>
-    <div class="container register">
-      <div class="row">
-        <div class="col-md-3 register-left">
-          <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
-          <h3>Welcome</h3>
-          <p>You are 30 seconds away from creating your own shortened URLs!</p>
-        </div>
-        <div class="col-md-9 register-right">
-          <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="home-tab"
-                data-toggle="tab"
-                href="#home"
-                role="tab"
-                aria-controls="home"
-                aria-selected="true"
-                >Login</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="profile-tab"
-                data-toggle="tab"
-                href="#profile"
-                role="tab"
-                aria-controls="profile"
-                aria-selected="false"
-                >Register</a
-              >
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="home"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-            >
-              <h3 class="register-heading">Login</h3>
-              <div class="row register-form">
-                <div class="col-md-12">
-                  <form action="/user/login" method="post">
 
-                    <div class="form-group">
-                      <input
-                      type="email"
-                      name="username"
-                      class="form-control"
-                      placeholder="Email ID"
-                      required
-                      />
-                    </div>
-                    
-                    <div class="form-group mt-3">
-                      <input
-                      type="password"
-                      name="password"
-                      class="form-control"
-                      placeholder="Password"
-                      required
-                      />
-                    </div>
-                    <input type="submit" name="login" class="btnRegister" value="Login" />
-                  </form>
+
+
+
+
+
+
+
+
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="hero">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12">
+        <a class="hero-brand" href="index.html" title="Home"
+          ><img id="rocket" alt="Rocket Logo" src="img/logo_white.png"
+        /></a>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <h1>An easy to use URL shortener</h1>
+
+      <p class="tagline">
+        Click on the button below to shrink your URL
+      </p>
+      <a class="btn btn-full scrollto" href="#about">Sign up / Sign in</a>
+      <a class="btn btn-full scrollto ms-5" href="#about">Get Started Now</a>
+   
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+
+   <!-- ======= Header ======= -->
+   <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <a href="index.html"><img src="img/logo_white.png" alt="" /></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Signup</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section class="about" id="about">
+      
+      </section>
+      <!-- End About Section -->
+      
+      <!-- ======= Welcome Section ======= -->
+      <section class="welcome text-center">
+        <div class="container register">
+          <div class="row">
+            <div class="col-md-3 register-left">
+              <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+              <h3>Welcome</h3>
+              <p>You are 30 seconds away from creating your own shortened URLs!</p>
+            </div>
+            <div class="col-md-9 register-right">
+              <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="home-tab"
+                    data-toggle="tab"
+                    href="#home"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                    >Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="profile-tab"
+                    data-toggle="tab"
+                    href="#profile"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                    >Register</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <h3 class="register-heading">Login</h3>
+                  <div class="row register-form">
+                    <div class="col-md-12">
+                      <form action="/user/login" method="post">
+    
+                        <div class="form-group">
+                          <input
+                          type="email"
+                          name="username"
+                          class="form-control"
+                          placeholder="Email ID"
+                          required
+                          />
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                          <input
+                          type="password"
+                          name="password"
+                          class="form-control"
+                          placeholder="Password"
+                          required
+                          />
+                        </div>
+                        <input type="submit" name="login" class="btnRegister" value="Login" />
+                      </form>
+                      </div>
                   </div>
+                </div>
+                <div
+                  class="tab-pane fade show"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <h3 class="register-heading">Register</h3>
+                  <div class="row register-form">
+                    <div class="col-md-6">
+                      <form action="/user/register" method="post">
+                        <div class="form-group">
+                          <input
+                          type="text"
+                          name="fName"
+                          class="form-control"
+                          placeholder="First Name *"
+                          value=""
+                          />
+                        </div>
+                        
+                        <div class="form-group">
+                          <input
+                          type="email"
+                          name="username"
+                          class="form-control mt-3"
+                          
+                          placeholder="Email *"
+                          value=""
+                          />
+                        </div>
+                        <div class="form-group">
+                          <input
+                          type="password"
+                          name="password"
+                          class="form-control  mt-3"
+                          placeholder="Confirm Password *"
+                          value=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                          type="text"
+                          name="lName"
+                          class="form-control "
+                          placeholder="Last Name *"
+                          value=""
+                          />
+                        </div>
+                        <div class="form-group">
+                          <input
+                          type="password"
+                          name="cPassword"
+                          class="form-control  mt-3"
+                          placeholder="Password *"
+                          value=""
+                          />
+                        </div>
+                        
+                        <input type="submit" name="register" class="btnRegister mt-3 w-50" value="Register" />
+                        
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="tab-pane fade show"
-              id="profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
-              <h3 class="register-heading">Register</h3>
-              <div class="row register-form">
-                <div class="col-md-6">
-                  <form action="/user/register" method="post">
-                    <div class="form-group">
-                      <input
+          </div>
+    
+      </div>
+        
+      </section>
+      <!-- End Welcome Section -->
+
+
+
+      <!-- ======= Team Section ======= -->
+      <section class="team" id="team">
+        <div class="container">
+          <h2 class="text-center">Meet our team</h2>
+
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-sm-12 col-lg-6 col-xs-6 w-25">
+              <div class="card card-block">
+                <a href="#"
+                  ><img alt="" class="team-img" src="img/team-1.jpg" />
+                  <div class="card-title-wrap">
+                    <span class="card-title">Yuvraj Pawar</span>
+                    <span class="card-text">Developer</span>
+                  </div>
+
+                  <div class="team-over">
+                    <h4 class="hidden-md-down">Connect with me</h4>
+
+                    <nav class="social-nav">
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                    </nav>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi
+                      honestatis.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6 col-xs-6 w-25">
+              <div class="card card-block">
+                <a href="#"
+                  ><img alt="" class="team-img" src="img/team-2.jpg" />
+                  <div class="card-title-wrap">
+                    <span class="card-title">Devshree Kusumkar</span>
+                    <span class="card-text">Designer</span>
+                  </div>
+
+                  <div class="team-over">
+                    <h4 class="hidden-md-down">Connect with me</h4>
+
+                    <nav class="social-nav">
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                    </nav>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi
+                      honestatis.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+         
+          </div>
+        </div>
+      </section>
+      <!-- End Team Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="section-title">Contact Us</h2>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4">
+              <div class="info">
+                <div>
+                  <i class="bi bi-geo-alt"></i>
+                  <p>Pimpri Chinchwad College of Engineering, Pune</p>
+                </div>
+
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  <p>info@example.com</p>
+                </div>
+
+                <div>
+                  <i class="bi bi-phone"></i>
+                  <p>+91 9562133xxxx</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8">
+              <div class="form">
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  role="form"
+                  class="php-email-form"
+                >
+                  <div class="form-group">
+                    <input
                       type="text"
-                      name="fName"
+                      name="name"
                       class="form-control"
-                      placeholder="First Name *"
-                      value=""
-                      />
-                    </div>
-                    
-                    <div class="form-group">
-                      <input
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mt-3">
+                    <input
                       type="email"
-                      name="username"
-                      class="form-control mt-3"
-                      
-                      placeholder="Email *"
-                      value=""
-                      />
-                    </div>
-                    <div class="form-group">
-                      <input
-                      type="password"
-                      name="password"
-                      class="form-control  mt-3"
-                      placeholder="Confirm Password *"
-                      value=""
-                      />
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mt-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="5"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input
-                      type="text"
-                      name="lName"
-                      class="form-control "
-                      placeholder="Last Name *"
-                      value=""
-                      />
-                    </div>
-                    <div class="form-group">
-                      <input
-                      type="password"
-                      name="cPassword"
-                      class="form-control  mt-3"
-                      placeholder="Password *"
-                      value=""
-                      />
-                    </div>
-                    
-                    <input type="submit" name="register" class="btnRegister mt-3" value="Register" />
-                    
+                  <div class="text-center">
+                    <button type="submit">Send Message</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer class="site-footer">
+      <div class="bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+              <p class="copyright-text">
+                &copy; Copyright 2021 <strong>Rocket</strong>. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center scrollto"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="purecounter/purecounter.js"></script>
+    <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="glightbox/js/glightbox.min.js"></script>
+
+
+
+    <script src="js/main.js"></script>
+    
+  
   </body>
 </html>
