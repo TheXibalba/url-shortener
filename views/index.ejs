@@ -33,25 +33,11 @@
 
   <link href="css/homeStyles.css" rel="stylesheet" />
     
-    
-    
-    
-    
-    
-    
-    
-    
+   
     <link rel="stylesheet" href="css/regStyles.css" />
 
   </head>
   <body>
-
-
-
-
-
-
-
 
 
  <!-- ======= Hero Section ======= -->
@@ -65,14 +51,26 @@
       </div>
     </div>
 
-    <div class="col-md-12">
-      <h1>An easy to use URL shortener</h1>
+    <div class="col-md-12 d-flex flex-column align-items-center justify-content-center">
+      <div class="">
 
-      <p class="tagline">
-        Click on the button below to shrink your URL
-      </p>
-      <a class="btn btn-full scrollto" href="#about">Sign up / Sign in</a>
-      <a class="btn btn-full scrollto ms-5" href="#about">Get Started Now</a>
+             <h1>Rocket</h1>
+      <h2>An easy to use URL shortener</h2>
+      </div>
+ 
+<div class="w-25">
+
+<form  class="" action="/api/shorten" method="post">
+        <div class="form-group d-flex align-items-center justify-content-between">
+          <input class="form-control" type="text" placeholder="Paste the long URL">
+          <input class="btn btn-md b-0 ml-3 btn-bg" type="submit" value="Shorten">
+        
+        </div>
+      </form>
+
+      <a class="btn btn-full scrollto mt-4 p-2 btn-bg" href="#about">Sign up / Sign in</a>
+</div>
+      
    
     </div>
   </div>
@@ -117,8 +115,8 @@
           <div class="row">
             <div class="col-md-3 register-left">
               <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
-              <h3>Welcome</h3>
-              <p>You are 30 seconds away from creating your own shortened URLs!</p>
+              <h3>Welcome to Rocket!</h3>
+            
             </div>
             <div class="col-md-9 register-right">
               <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -261,13 +259,13 @@
 
 
       <!-- ======= Team Section ======= -->
-      <section class="team" id="team">
+      <section class="team mt-2 mb-5 pb-5" id="team">
         <div class="container">
           <h2 class="text-center">Meet our team</h2>
 
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-sm-12 col-lg-6 col-xs-6 w-25">
-              <div class="card card-block">
+              <div class="card card-block shadow">
                 <a href="#"
                   ><img alt="" class="team-img" src="img/team-1.jpg" />
                   <div class="card-title-wrap">
@@ -279,15 +277,14 @@
                     <h4 class="hidden-md-down">Connect with me</h4>
 
                     <nav class="social-nav">
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                      <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                      
+                      
+                      <a href="https://www.linkedin.com/in/thexibalba" target="_blank"><i class="bi bi-linkedin"></i></a>
+                      <a href="mailto:yuvraj.pawar20@pccoepune.org"  ><i class="bi bi-envelope-fill"></i></a>
                     </nav>
 
                     <p>
-                      Lorem ipsum dolor sit amet, eu sed suas eruditi
-                      honestatis.
+                      A Full Stack Developer
                     </p>
                   </div>
                 </a>
@@ -295,7 +292,7 @@
             </div>
 
             <div class="col-sm-12 col-lg-6 col-xs-6 w-25">
-              <div class="card card-block">
+              <div class="card card-block shadow">
                 <a href="#"
                   ><img alt="" class="team-img" src="img/team-2.jpg" />
                   <div class="card-title-wrap">
@@ -307,15 +304,13 @@
                     <h4 class="hidden-md-down">Connect with me</h4>
 
                     <nav class="social-nav">
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                      <a href="#"><i class="bi bi-envelope-fill"></i></a>
+      
+                      <a href="https://www.linkedin.com/in/devshree-kusumkar-51489b199" target="_blank"><i class="bi bi-linkedin"></i></a>
+                      <a href="mailto:devshree.kusumkar20@pccoepune.org" ><i class="bi bi-envelope-fill"></i></a>
                     </nav>
 
                     <p>
-                      Lorem ipsum dolor sit amet, eu sed suas eruditi
-                      honestatis.
+                      An artist at heart
                     </p>
                   </div>
                 </a>
@@ -430,9 +425,9 @@
       <div class="bottom">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-xs-12 text-lg-start text-center">
-              <p class="copyright-text">
-                &copy; Copyright 2021 <strong>Rocket</strong>. All Rights Reserved
+            <div class="col-lg-12 col-xs-12 text-center">
+              <p class="text-white">
+                 Copyright &copy; 2021, <strong>Rocket</strong>. All Rights Reserved
               </p>
             </div>
           </div>

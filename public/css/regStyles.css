@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .register {
-  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  background: rgba(0, 0, 0, 0.3);
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 3%;
@@ -14,7 +18,7 @@
   border-radius: 1.5rem;
   padding: 2%;
   width: 60%;
-  background: #f8f9fa;
+  background: #ffffff;
   font-weight: bold;
   color: #383d41;
   margin-top: 30%;
@@ -22,7 +26,7 @@
   cursor: pointer;
 }
 .register-right {
-  background: #f8f9fa;
+  background: #ffffff;
   border-top-left-radius: 10% 50%;
   border-bottom-left-radius: 10% 50%;
 }
@@ -71,16 +75,21 @@
   border: none;
   border-radius: 1.5rem;
   padding: 0.5rem;
-  background: #0062cc;
+  background: #324588;
   color: #fff;
   font-weight: 600;
   width: 30%;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btnRegister:hover {
+  background: #19234b;
 }
 .register .nav-tabs {
   margin-top: 3%;
   border: none;
-  background: #0062cc;
+  background: #324588;
   border-radius: 1.5rem;
   width: 28%;
   float: right;
@@ -97,8 +106,8 @@
   border: none;
 }
 .register .nav-tabs .nav-link.active {
-  color: #0062cc;
-  border: 2px solid #0062cc;
+  color: #324588;
+  border: 2px solid #324588;
   border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
@@ -107,4 +116,5 @@
   margin-top: 8%;
   margin-bottom: -15%;
   color: #495057;
+  font-size: 2rem;
 }

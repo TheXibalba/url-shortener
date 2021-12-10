@@ -1,11 +1,12 @@
-/**
-* Template Name: Bell - v4.6.0
-* Template URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-h1, h2, h3, h4, h5, h6 {
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
@@ -39,7 +40,7 @@ h4 {
 a {
   transition: 0.5s;
   text-decoration: none;
-  color: #199EB8;
+  color: #199eb8;
 }
 a:hover {
   color: #23c2e1;
@@ -53,9 +54,9 @@ a:hover {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 6px;
   z-index: 996;
-  background: #199EB8;
+  background: #324588;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -67,7 +68,7 @@ a:hover {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #1ebddc;
+  background: #101731;
   color: #fff;
 }
 .back-to-top.active {
@@ -79,15 +80,14 @@ a:hover {
   Elements
   ================================================== */
 .btn {
-  background-color: #199EB8;
+  background-color: #199eb8;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #fff;
-  padding: 15px 45px;
-  border-radius: 50px;
+  border-radius: 0.2rem;
 }
 .btn:hover {
-  background-color: #E04F00;
+  background-color: #e04f00;
   color: #fff;
 }
 .btn:focus {
@@ -100,9 +100,8 @@ a:hover {
 }
 .btn-ghost:hover {
   background-color: #fff;
-  color: #199EB8;
+  color: #199eb8;
 }
-
 
 .card {
   position: relative;
@@ -121,7 +120,7 @@ a:hover {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #199EB8;
+  background: #19234b;
   height: 70px;
 }
 #header #logo h1 {
@@ -192,7 +191,8 @@ a:hover {
 .navbar li {
   position: relative;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,17 +200,21 @@ a:hover {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
   white-space: nowrap;
   transition: 0.3s;
 }
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: rgb(223, 211, 211);
 }
 .navbar .dropdown ul {
   display: block;
@@ -237,8 +241,10 @@ a:hover {
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #199EB8;
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #199eb8;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -315,15 +321,19 @@ a:hover {
   overflow-y: auto;
   transition: 0.3s;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #555;
 }
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #199EB8;
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #199eb8;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 .navbar-mobile .dropdown ul {
@@ -346,8 +356,10 @@ a:hover {
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #199EB8;
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #199eb8;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -414,7 +426,7 @@ a:hover {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: #666;
-  border: 6px solid #199EB8;
+  border: 6px solid #199eb8;
   border-radius: 50%;
   padding: 55px 25px 0 25px;
   position: relative;
@@ -428,7 +440,7 @@ a:hover {
   right: -15px;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  background-color: #E04F00;
+  background-color: #e04f00;
   position: absolute;
   border-radius: 50%;
   font-weight: 700;
@@ -506,7 +518,7 @@ a:hover {
   padding-bottom: 45px;
 }
 .features h2 {
-  color: #199EB8;
+  color: #199eb8;
 }
 
 .feature-col {
@@ -524,7 +536,7 @@ a:hover {
   width: 70px;
   height: 70px;
   margin-bottom: 15px;
-  background: #199EB8;
+  background: #199eb8;
   color: #fff;
   font-size: 24px;
   text-align: center;
@@ -535,7 +547,7 @@ a:hover {
   line-height: 0;
 }
 .feature-col h3 {
-  color: #199EB8;
+  color: #199eb8;
 }
 .feature-col p {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -547,7 +559,7 @@ a:hover {
   Call-to-action Styling
   ================================================== */
 .cta {
-  background-color: #199EB8;
+  background-color: #199eb8;
   padding: 25px 0;
 }
 .cta h2 {
@@ -574,7 +586,7 @@ a:hover {
   padding-bottom: 0;
 }
 .portfolio h2 {
-  color: #199EB8;
+  color: #199eb8;
   margin-bottom: 25px;
 }
 
@@ -627,7 +639,8 @@ a:hover {
   Team Styling
   ================================================== */
 .team h2 {
-  color: #199EB8;
+  color: #495057;
+  font-size: 3rem;
 }
 .team .col-sm-3 {
   padding: 0;
@@ -665,7 +678,7 @@ a:hover {
   visibility: visible;
 }
 .team .card:hover .card-title-wrap {
-  background-color: #199EB8;
+  background-color: #324588;
 }
 .team .card:hover .card-title-wrap .card-title,
 .team .card:hover .card-title-wrap .card-text {
@@ -709,16 +722,17 @@ a:hover {
   Contact Section
   ================================================== */
 #contact {
-  background: #f7f7f7;
+  background: #fffcdc2e;
   padding: 80px 0;
 }
 #contact h2 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  color: #199EB8;
+  color: #495057;
+  font-size: 3rem;
 }
 #contact .info i {
   font-size: 32px;
-  color: #199EB8;
+  color: #324588;
   float: left;
   line-height: 0;
 }
@@ -770,22 +784,24 @@ a:hover {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-#contact .php-email-form input, #contact .php-email-form textarea {
+#contact .php-email-form input,
+#contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
 }
-#contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #199EB8;
+#contact .php-email-form input::focus,
+#contact .php-email-form textarea::focus {
+  background-color: #199eb8;
 }
-#contact .php-email-form button[type=submit] {
-  background: #199EB8;
+#contact .php-email-form button[type="submit"] {
+  background: #324588;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
 }
-#contact .php-email-form button[type=submit]:hover {
-  background: #23c2e1;
+#contact .php-email-form button[type="submit"]:hover {
+  background: #101731;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -816,7 +832,6 @@ a:hover {
   color: #fff;
 }
 .site-footer p {
-  opacity: 0.75;
   line-height: 2.0925;
 }
 .site-footer h2,
@@ -831,8 +846,8 @@ a:hover {
   opacity: 1;
 }
 .site-footer .bottom {
-  background-color: #000;
-  padding: 20px 0;
+  background-color: #19234b;
+  padding: 10px 0;
 }
 .site-footer .bottom .list-inline,
 .site-footer .bottom p {
@@ -848,13 +863,13 @@ a:hover {
   margin-right: 15px;
 }
 .site-footer .bottom .list-inline a:hover {
-  color: #199EB8;
+  color: #199eb8;
 }
 .site-footer .credits {
   color: #ddd;
 }
 .site-footer .credits a {
-  color: #199EB8;
+  color: #199eb8;
 }
 
 /* ==================================================
@@ -862,8 +877,8 @@ a:hover {
   ================================================== */
 @media (max-width: 61.9em) {
   section,
-.block,
-.cta {
+  .block,
+  .cta {
     padding: 35px 0;
   }
 
@@ -872,7 +887,7 @@ a:hover {
   }
 
   p,
-.block p {
+  .block p {
     margin: 0;
   }
 
@@ -890,7 +905,7 @@ a:hover {
   }
 
   h2,
-.tagline {
+  .tagline {
     font-size: 24px;
   }
 
@@ -950,4 +965,11 @@ a:hover {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+.btn-bg {
+  background-color: #324588;
+}
+.btn-bg:hover {
+  background-color: #101731;
 }
