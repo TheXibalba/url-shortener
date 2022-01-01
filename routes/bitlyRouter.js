@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bitlyController = require("../controllers/bitlyController");
 const mongoose = require("mongoose");
-const User = require("../models/User");
+const User = require("../models/user");
 const axios = require("axios");
 
 router.post("/shorten", async (req, res) => {
