@@ -47,7 +47,7 @@ const userController = {
               expires: new Date(Date.now() + 20 * 60 * 1000),
               httpOnly: true,
             })
-            .redirect("/user/dashboard");
+            .redirect(`/user/${user._id}`);
         } else {
           res.send("Wrong username or password.");
         }
@@ -60,8 +60,43 @@ const userController = {
     }
   },
 
+  logoutUser: async (req, res) => {
+    res.cookie("authToken", "").redirect("/");
+  },
+
   userDashboard: async (req, res) => {
-    res.render("dashboard");
+    const userid = req.params.userid;
+    try {
+      const user = await User.findOne({ _id: userid });
+
+      res.render("dashboard", {
+        userid: req.params.userid,
+        user: user,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  },
+
+  deleteLink: async (req, res) => {
+    const userid = req.params.userid;
+    const linkid = req.params.linkid;
+
+    try {
+      const result = await User.findOneAndUpdate(
+        { _id: userid },
+        {
+          $pull: {
+            urls: {
+              _id: linkid,
+            },
+          },
+        }
+      );
+      res.redirect(`/user/${userid}`);
+    } catch (error) {
+      console.log(error);
+    }
   },
 };
 

@@ -1,0 +1,131 @@
+body {
+  background-image: url(../img/dashboard.jpg);
+  background-size: cover;
+
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+
+nav {
+  background-color: #19234b;
+}
+
+.btn-bg {
+  background-color: #324588;
+}
+
+.short_url {
+  color: #ee6123;
+}
+
+.url-table {
+  opacity: 0.9;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*Navbar*/
+.navbar-brand {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+  top: 0.25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.link-container:hover {
+  background-color: #ebb5412e;
+
+  transition: all 0.3s ease-in-out;
+}
+
+
+.site-footer {
+  background-color: #111;
+  padding: 0;
+position: absolute;
+bottom:0;
+left: 0;
+right:0;
+}
+
+.site-footer h2,
+.site-footer p {
+  color: #fff;
+}
+.site-footer p {
+  line-height: 2.0925;
+}
+.site-footer h2,
+.site-footer .btn {
+  margin-bottom: 25px;
+}
+.site-footer .social-nav a {
+  color: #fff;
+  opacity: 0.25;
+}
+.site-footer .social-nav a:hover {
+  opacity: 1;
+}
+.site-footer .bottom {
+  background-color: #19234b;
+  padding: 10px 0;
+}
+.site-footer .bottom .list-inline,
+.site-footer .bottom p {
+  margin: 0;
+}
+.site-footer .bottom .list-inline {
+  position: relative;
+  top: 5px;
+}
+.site-footer .bottom .list-inline a {
+  color: #fff;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin-right: 15px;
+}
+.site-footer .bottom .list-inline a:hover {
+  color: #199eb8;
+}
+.site-footer .credits {
+  color: #ddd;
+}
+.site-footer .credits a {
+  color: #199eb8;
+}

@@ -23,23 +23,10 @@ const DB_USERNAME = process.env.DB_USERNAME;
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const DB_NAME = process.env.DB_NAME;
 
-// mongoose
-//   .connect(
-//     `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@cluster0.ia2jk.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`,
-//     {
-//       useNewUrlParser: true,
-//       useUnifiedTopology: true,
-//     }
-//   )
-//   .then((data) => {
-//     console.log("Database has been connected!");
-//   })
-//   .catch((err) => {
-//     console.log("Data connection error!");
-//   });
+
 
 mongoose
-  .connect(`mongodb://localhost/url_shortner`, {
+  .connect(`mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@cluster0.ia2jk.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

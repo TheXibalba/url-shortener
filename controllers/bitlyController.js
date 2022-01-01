@@ -6,6 +6,7 @@ const headers = {
 };
 const bitlyController = async (longUrl) => {
   const obj = { long_url: longUrl };
+  
   const dataString = JSON.stringify(obj);
   let temp = await axios
     .post("https://api-ssl.bitly.com/v4/shorten", dataString, {
@@ -15,7 +16,7 @@ const bitlyController = async (longUrl) => {
       return response.data.link;
     })
     .catch((err) => {
-      console.log(err);
+      console.log(err.data);
     });
   return temp;
 };

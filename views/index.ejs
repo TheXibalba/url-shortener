@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rocket | URL Shortener</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.0/umd/popper.min.js" 
+    integrity="sha512-PZrlUFhlOigX38TOCMdaYkhiqa/fET/Lztzjn+kdGxefUZanNUfmHv+9M/wSiOHzlcLX/vcCnmvOZSHi5Dqrsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -21,7 +24,7 @@
       crossorigin="anonymous"
     ></script>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     <link
     href="bootstrap-icons/bootstrap-icons.css"
     rel="stylesheet"
@@ -62,8 +65,8 @@
 
 <form  class="" action="/api/shorten" method="post">
         <div class="form-group d-flex align-items-center justify-content-between">
-          <input class="form-control" type="text" placeholder="Paste the long URL">
-          <input class="btn btn-md b-0 ml-3 btn-bg" type="submit" value="Shorten">
+          <input class="form-control" type="text" name="longUrl" placeholder="Paste the long URL">
+          <input class="btn btn-md b-0 ml-3 btn-bg"  type="submit" value="Shorten">
         
         </div>
       </form>
@@ -443,9 +446,7 @@
     ></a>
 
     <!-- Vendor JS Files -->
-    <script src="purecounter/purecounter.js"></script>
-    <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    <script src="glightbox/js/glightbox.min.js"></script>
+
 
 
 
