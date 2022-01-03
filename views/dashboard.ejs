@@ -31,33 +31,44 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
-  <body>
-    <nav
-      class="navbar navbar-dark sticky-top row
-       p-0 shadow overflow-hidden"
-    >
+  <body >
+    <nav class="navbar navbar-dark sticky-top row p-3 shadow overflow-hidden">
       <div class="left col-lg-3 col-md-3">
-        <a class="text-decoration-none  text-white fw-bold col-md-3 col-lg-2 m-0 mt-0 px-3" href="#"
+        <a
+          class="
+            text-decoration-none text-white
+            fw-bold
+            col-md-3 col-lg-2
+            m-0
+            mt-0
+            px-3
+          "
+          href="#"
           >Rocket | URL Shortener</a
         >
       </div>
-      <div class="center col-lg-6 col-md-6">
-        <input
-          class="form-control form-control"
-          type="text"
-          placeholder="Search"
-          aria-label="Search"
-        />
-      </div>
-      <div class="right col-lg-3 col-md-3 py-1">
-        <p class="text-end me-4">
-         <span class="text-white fs-6 ">
-            <%=user.firstName %> <%=user.lastName%> |
-         </span> 
-          <a class=" btn btn-sm btn-outline-warning" href="/user/logout">Sign out</a>
-        </p>
+      <div class="center col-lg-6 col-md-6"></div>
+      <div class="right col-lg-3 col-md-3 d-flex align-items-center justify-content-center">
+      
+
+          <p class="m-0 me-3">
+            <span class="text-white fs-6">
+              <%=user.firstName %> <%=user.lastName%> |
+            </span>
+          </p>
+          <a class="btn btn-sm btn-outline-warning" href="/user/logout"
+          >Sign out</a
+          >
+    
       </div>
     </nav>
 
@@ -93,7 +104,7 @@
                     required
                   />
                   <input
-                    class="btn  btn-outline-light btn-md b-0 ml-3 btn-bg mx-2"
+                    class="btn btn-outline-light btn-md b-0 ml-3 btn-bg mx-2"
                     type="submit"
                     value="Shorten"
                   />
@@ -102,7 +113,21 @@
             </div>
           </div>
 
-          <div class="container url-table shadow p-4 w-50 bg-light opacity-0 rounded h-75 overflow-scroll">
+          <div
+            class="
+              container
+              url-table
+              shadow
+              p-4
+              w-50
+              bg-light
+              opacity-0
+              rounded
+              h-50
+              overflow-auto
+             
+            "
+          >
             <h2 class="text-center mb-4">Your History</h2>
             <table class="table table-hover table-striped">
               <tbody>
@@ -111,10 +136,12 @@
                   <div class="border link-container p-3 m-3 shadow">
                     <div class="time mb-3 p-0 border-bottom">
                       <p>
-                        <span class="text-muted fs-6"><%=(url.createdAt).toString().slice(0,25)%></span>
+                        <span class="text-muted fs-6"
+                          ><%=(url.createdAt).toString().slice(0,25)%></span
+                        >
                         |
                         <span class="text-primary fs-6">
-                          <%=user.firstName%> <%=user.lastName%> 
+                          <%=user.firstName%> <%=user.lastName%>
                         </span>
                       </p>
                     </div>
@@ -185,7 +212,8 @@
           <div class="row">
             <div class="col-lg-12 col-xs-12 text-center">
               <p class="text-white">
-                 Copyright &copy; 2021, <strong>Rocket</strong>. All Rights Reserved
+                Copyright &copy; 2021, <strong>Rocket</strong>. All Rights
+                Reserved
               </p>
             </div>
           </div>
@@ -193,7 +221,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-
 
     <script src="/js/main.js"></script>
     <script

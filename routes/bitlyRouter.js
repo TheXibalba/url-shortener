@@ -9,10 +9,9 @@ router.post("/shorten", async (req, res) => {
   const longUrl = req.body.longUrl;
   console.log(longUrl);
   const shortenedUrl = await bitlyController(longUrl);
-
-  res.send(shortenedUrl);
+  console.log(shortenedUrl);
+  res.send({shortenedUrl:shortenedUrl});
 });
-
 
 router.post("/:userid/shorten", async (req, res) => {
   const userid = req.params.userid;

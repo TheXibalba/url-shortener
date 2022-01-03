@@ -4,35 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rocket | URL Shortener</title>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.0/umd/popper.min.js" 
     integrity="sha512-PZrlUFhlOigX38TOCMdaYkhiqa/fET/Lztzjn+kdGxefUZanNUfmHv+9M/wSiOHzlcLX/vcCnmvOZSHi5Dqrsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+    crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
+    src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"
     ></script>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-    <link
-    href="bootstrap-icons/bootstrap-icons.css"
-    rel="stylesheet"
-  />
-  <link
-    href="glightbox/css/glightbox.min.css"
-    rel="stylesheet"
-  />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link href="css/homeStyles.css" rel="stylesheet" />
     
@@ -63,10 +56,11 @@
  
 <div class="w-25">
 
-<form  class="" action="/api/shorten" method="post">
+<form  id="longUrlForm" action="/api/shorten" method="post">
         <div class="form-group d-flex align-items-center justify-content-between">
-          <input class="form-control" type="text" name="longUrl" placeholder="Paste the long URL">
+          <input class="form-control" type="text" name="longUrl" id="longUrl" placeholder="Paste the long URL" required>
           <input class="btn btn-md b-0 ml-3 btn-bg"  type="submit" value="Shorten">
+          <input class="btn btn-md b-0 ml-3 btn-bg"  type="reset" value="Clear">
         
         </div>
       </form>
@@ -264,7 +258,7 @@
       <!-- ======= Team Section ======= -->
       <section class="team mt-2 mb-5 pb-5" id="team">
         <div class="container">
-          <h2 class="text-center">Meet our team</h2>
+          <h2 class="text-center">Our Team</h2>
 
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-sm-12 col-lg-6 col-xs-6 w-25">
@@ -282,8 +276,8 @@
                     <nav class="social-nav">
                       
                       
-                      <a href="https://www.linkedin.com/in/thexibalba" target="_blank"><i class="bi bi-linkedin"></i></a>
-                      <a href="mailto:yuvraj.pawar20@pccoepune.org"  ><i class="bi bi-envelope-fill"></i></a>
+                      <a href="https://www.linkedin.com/in/thexibalba" target="_blank"><i class="fa fa-linkedin"></i></a>
+                      <a href="mailto:yuvraj.pawar20@pccoepune.org"  ><i class="fa fa-envelope"></i></a>
                     </nav>
 
                     <p>
@@ -308,11 +302,11 @@
 
                     <nav class="social-nav">
       
-                      <a href="https://www.linkedin.com/in/devshree-kusumkar-51489b199" target="_blank"><i class="bi bi-linkedin"></i></a>
-                      <a href="mailto:devshree.kusumkar20@pccoepune.org" ><i class="bi bi-envelope-fill"></i></a>
+                      <a href="https://www.linkedin.com/in/devshree-kusumkar-51489b199" target="_blank"><i class="fa fa-linkedin"></i></a>
+                      <a href="mailto:devshree.kusumkar20@pccoepune.org" ><i class="fa fa-envelope"></i></a>
                     </nav>
 
-                    <p>
+                    <p >
                       An artist at heart
                     </p>
                   </div>
@@ -359,7 +353,7 @@
             <div class="col-lg-5 col-md-8">
               <div class="form">
                 <form
-                  action="forms/contact.php"
+                  action="mailto:devshree.kusumkar20@pccoepune.org"
                   method="post"
                   role="form"
                   class="php-email-form"
@@ -442,16 +436,56 @@
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center scrollto"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+      >
+      <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+     </a>
 
     <!-- Vendor JS Files -->
 
-
-
-
-    <script src="js/main.js"></script>
     
+    
+    <script src="js/main.js"></script>
+    <script defer>
+    const ipField= document.getElementById("longUrl");
+window.onload=function() {
+ipField.value="";
+}
+const longUrlForm=document.getElementById("longUrlForm");
+
+longUrlForm.addEventListener("submit",getShortenedUrl);
+
+
+async function getShortenedUrl(e){
+  
+  e.preventDefault();
+  const url= document.getElementById("longUrl").value;
+  try {
+    const data = await fetch(
+        `/api/shorten`,
+        {
+          method: "POST",
+          body: JSON.stringify({
+            longUrl: url,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      const jsonData = await data.json();
+  const shortenedUrl=await jsonData.shortenedUrl;
+ipField.value= shortenedUrl;
+await navigator.clipboard.writeText(shortenedUrl);
+alert("URL has been copied to clipboard!");
+
+} catch (error) {
+  
+  alert("Clipboard Error!");
+}
+      
+    }
+    </script>
   
   </body>
 </html>

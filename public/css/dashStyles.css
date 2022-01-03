@@ -79,10 +79,7 @@ nav {
 .site-footer {
   background-color: #111;
   padding: 0;
-position: absolute;
-bottom:0;
-left: 0;
-right:0;
+
 }
 
 .site-footer h2,
